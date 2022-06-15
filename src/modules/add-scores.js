@@ -4,9 +4,7 @@ const scoreName = document.getElementById('score-input');
 const scoresTable = document.getElementById('scores-table');
 
 class StoredScores {
-  static displayScores () {
-
-  }
+  // Here I'd insert a function to display the stored books if there were any 
 
   static addScores(scores) {
     const scoreInformation = document.createElement('p');
