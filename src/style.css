@@ -37,7 +37,6 @@
   background-color: rgb(156, 147, 147);
 }
 
-
 #scores-table {
   border: 2px solid black;
   margin-top: 1rem;
@@ -50,7 +49,7 @@
 
 .score-name:nth-child(2n) {
   background-color: #ccc;
-} 
+}
 
 #add-form-section {
   width: 40%;
