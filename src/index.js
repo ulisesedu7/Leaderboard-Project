@@ -1,4 +1,5 @@
 import './style.css';
+import StoredScores from './modules/add-scores';
 
 // Constructor for the object
 class ScoreInfo {
@@ -20,15 +21,15 @@ mainForm.addEventListener('submit', (e) => {
   const name = inputName.value;
   const score = scoreName.value;
   
-  if (title !== '' && author !== '') {
+  if (name !== '' && score !== '') {
     // Instate Score
     const scores = new ScoreInfo(name, score);
 
     // Add Score to List
-    StoredInfo.addScores(scores);
+    StoredScores.addScores(scores);
 
     // Clear Inputs
-    StoredInfo.clearInputs();
+    StoredScores.clearInputs();
   }
 
 });

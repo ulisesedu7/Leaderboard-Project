@@ -24,3 +24,5 @@ class StoredScores {
     scoreName.value = '';
   }
 }
+
+export default StoredScores;
