@@ -1,5 +1,5 @@
-# Webpack-Setup
-This repository contains set up project using webpack.
+# Leaderboard
+This a project for a Leaderboard that will store scores and the name that got it.
 
 ## Built With
 
@@ -9,7 +9,7 @@ This repository contains set up project using webpack.
 - Git & Github
 - WebPack
 
-## Live Demo
+## Live Demo --Not Available Yet
 - Check the live demo of my page [here]()
 ## Getting Started
 
