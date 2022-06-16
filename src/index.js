@@ -1,5 +1,12 @@
 import './style.css';
 import StoredScores from './modules/add-scores.js';
+import createGameId from './modules/new-game.js';
+import sendData from './modules/send-data.js';
+
+// Base URL from API 
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
+
+const refreshBtn = document.getElementById('refresh-btn');
 
 // Constructor for the object
 class ScoreInfo {
@@ -18,12 +25,15 @@ mainForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
   // Get Values
-  const name = inputName.value;
-  const score = scoreName.value;
+  const firstName = inputName.value;
+  const scoreNumber = scoreName.value;
 
-  if (name !== '' && score !== '') {
+  if (firstName !== '' && scoreNumber !== '') {
     // Instate Score
-    const scores = new ScoreInfo(name, score);
+    const scores = new ScoreInfo(firstName, scoreNumber);
+
+    // Send Data to API
+    sendData(baseUrl);
 
     // Add Score to List
     StoredScores.addScores(scores);

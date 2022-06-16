@@ -1,0 +1,71 @@
+[33mcommit 5abcafb6cf504531ea9137c3a9188eb3f5bca793[m[33m ([m[1;36mHEAD -> [m[1;32mfeature-1[m[33m, [m[1;31morigin/feature-1[m[33m)[m
+Author: Ulises Largaespada <ulisesedu7@users.noreply.github.com>
+Date:   Wed Jun 15 17:43:31 2022 -0600
+
+    Run build for the dist folder to have the information
+
+[33mcommit 06a5361181f9ae94b2a8d0da7d559b8b8edb80a6[m
+Author: Ulises Largaespada <ulisesedu7@users.noreply.github.com>
+Date:   Wed Jun 15 17:35:45 2022 -0600
+
+    Fix Linter Errors
+
+[33mcommit f01cf52978abfeeeeaa6e527aab799f46e43ea16[m
+Author: Ulises Largaespada <ulisesedu7@users.noreply.github.com>
+Date:   Wed Jun 15 17:31:51 2022 -0600
+
+    Finish main function
+
+[33mcommit 06496bbac898cd2c9894daa2e691fa0d9487d514[m
+Author: Ulises Largaespada <ulisesedu7@users.noreply.github.com>
+Date:   Wed Jun 15 17:29:28 2022 -0600
+
+    Review that everything works just fine
+
+[33mcommit 174a930e23be19b2d37e6b9536d3d2e199a8a87e[m
+Author: Ulises Largaespada <ulisesedu7@users.noreply.github.com>
+Date:   Wed Jun 15 17:19:33 2022 -0600
+
+    Finish Main Function to add the books
+
+[33mcommit dcba6e1df8a41743d69e32930c26b670e8089eec[m
+Author: Ulises Largaespada <ulisesedu7@users.noreply.github.com>
+Date:   Wed Jun 15 17:15:31 2022 -0600
+
+    Start Js function to add the books dynamically
+
+[33mcommit d3c58bd6f8baf3f4c8be7631bf436f2b2fbca226[m
+Author: Ulises Largaespada <ulisesedu7@users.noreply.github.com>
+Date:   Wed Jun 15 14:41:52 2022 -0600
+
+    Fix Linter Errors
+
+[33mcommit 1d7bcb1975af8ae98b8f3b6dd00e2a335bd8bb60[m
+Author: Ulises Largaespada <ulisesedu7@users.noreply.github.com>
+Date:   Wed Jun 15 14:38:00 2022 -0600
+
+    Add Linters and edit README
+
+[33mcommit be1a7a3692a2a0476fcbbffd5bde0eb12eb67a7a[m
+Author: Ulises Largaespada <ulisesedu7@users.noreply.github.com>
+Date:   Wed Jun 15 14:33:39 2022 -0600
+
+    Finish Main Styles
+
+[33mcommit 7775c2b87ff77f8f6a2356614b3edc7bfc8d997d[m
+Author: Ulises Largaespada <ulisesedu7@users.noreply.github.com>
+Date:   Wed Jun 15 14:17:53 2022 -0600
+
+    Create HTML mark up
+
+[33mcommit f8d2d42c08df1d160827dff99cbc5b9f815d0ae3[m
+Author: Ulises Largaespada <ulisesedu7@users.noreply.github.com>
+Date:   Tue Jun 14 22:46:56 2022 -0600
+
+    Set up the project with WebPack
+
+[33mcommit 13ed40172edac64ff53a458e1b3e2b92b6f28082[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/development[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m, [m[1;32mdevelopment[m[33m)[m
+Author: Ulises Largaespada <ulisesedu7@gmail.com>
+Date:   Tue Jun 14 15:57:54 2022 -0600
+
+    Initial commit
