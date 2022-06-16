@@ -1,10 +1,11 @@
 // send data to the API
-const sendData = async (baseUrl) => {
-  const response = await fetch(baseUrl, {
+const sendData = async (baseUrl, gameId, scores) => {
+  const urlAppend = `${gameId}/scores`;
+  const response = await fetch(baseUrl + urlAppend, {
     method: 'POST',
     body: JSON.stringify({
-      user: firstName,
-      score: score,
+      user: scores.name,
+      score: scores.score,
     }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',

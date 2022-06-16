@@ -11,9 +11,6 @@ const createGameId = async (baseUrl) => {
     },
   });
 
-  const gameTitle = document.getElementById('game-title');
-  gameTitle.innerHTML = text.result;
-
   const apiD = await response.json();
   return apiD;
 };
