@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+}
+
+#main-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+
+#get-scores {
+  width: 40%;
+}
+
+#scores-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-type {
+  padding: 0.3rem;
+  appearance: none;
+  box-shadow: 5px 5px black;
+  transition-duration: 0.1s;
+}
+
+.btn-type:hover {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
+
+.btn-type:active {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+  background-color: rgb(156, 147, 147);
+}
+
+#scores-table {
+  border: 2px solid black;
+  margin-top: 1rem;
+}
+
+.score-name {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.score-name:nth-child(2n) {
+  background-color: #ccc;
+}
+
+#add-form-section {
+  width: 40%;
+}
+
+#add-score {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+
+#add-score input {
+  padding: 5px;
+}
+
+.btn-holder {
+  align-self: flex-end;
+}
