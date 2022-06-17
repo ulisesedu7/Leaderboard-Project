@@ -5,6 +5,7 @@ const scoresTable = document.getElementById('scores-table');
 
 class StoredScores {
   static addScores(firstName, scoreNumber) {
+
     const scoreInformation = document.createElement('p');
 
     scoreInformation.classList.add('score-name');
@@ -18,6 +19,10 @@ class StoredScores {
   static clearInputs() {
     inputName.value = '';
     scoreName.value = '';
+  }
+
+  static clearTable() {
+    scoresTable.innerHTML = '';
   }
 }
 

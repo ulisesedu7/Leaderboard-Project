@@ -1,7 +1,7 @@
 import './style.css';
 import StoredScores from './modules/add-scores.js';
 import sendData from './modules/send-data.js';
-// import receiveInfo from './modules/receive-info.js';
+import receiveInfo from './modules/receive-info.js';
 
 // Base URL from API 
 const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
@@ -50,33 +50,9 @@ mainForm.addEventListener('submit', (e) => {
 });
 
 // Receive Data Event 
-const receiveInfo = async (baseUrl, gameId) => {
-  const urlAppend = `${gameId}/scores`;
-  const response = await fetch(baseUrl + urlAppend, {
-    method: 'GET',
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-  });
-  const gamerArray = await response.json();
-
-  StoredScores.addScores(user.value, score.value);
-
-  return gamerArray;
-};
-
 refreshBtn.addEventListener('click', () => {
-
+  StoredScores.clearTable();
   receiveInfo(baseUrl, gameId);
 
-  // let scoresArray = JSON.parse(JSON.stringify(gamerArray));
-
-  // console.log(scoresArray);
-
-  // for (let i = 0; i < scoresArray.length; i++) {
-  //   StoredScores.addScores([i].scoresArray.user, [i].scoresArray.score);
-  // }
-
-  // StoredScores.addScores('Nena', 34);
-
 });
+
