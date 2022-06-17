@@ -5,7 +5,6 @@ const scoresTable = document.getElementById('scores-table');
 
 class StoredScores {
   static addScores(firstName, scoreNumber) {
-
     const scoreInformation = document.createElement('p');
 
     scoreInformation.classList.add('score-name');

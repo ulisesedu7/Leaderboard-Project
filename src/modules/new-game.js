@@ -1,5 +1,5 @@
-const newGame = { 
-	name: 'Dragon Quest XV: The Untold Story of Zenithia',
+const newGame = {
+  name: 'Dragon Quest XV: The Untold Story of Zenithia',
 };
 
 const createGameId = async (baseUrl) => {

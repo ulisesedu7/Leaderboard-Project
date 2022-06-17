@@ -3,7 +3,7 @@ import StoredScores from './modules/add-scores.js';
 import sendData from './modules/send-data.js';
 import receiveInfo from './modules/receive-info.js';
 
-// Base URL from API 
+// Base URL from API
 const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 
 const refreshBtn = document.getElementById('refresh-btn');
@@ -22,13 +22,9 @@ const inputName = document.getElementById('name-input');
 const scoreName = document.getElementById('score-input');
 
 // Set up Game and ID
-const gameId = '2vI2sAbMeXnrTQvulubR'
+const gameId = '2vI2sAbMeXnrTQvulubR';
 
 // Main Event Form
-// Get Values
-const firstName = inputName.value;
-const scoreNumber = scoreName.value;
-
 mainForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -46,13 +42,10 @@ mainForm.addEventListener('submit', (e) => {
     // Clear Inputs
     StoredScores.clearInputs();
   }
-
 });
 
-// Receive Data Event 
+// Receive Data Event
 refreshBtn.addEventListener('click', () => {
   StoredScores.clearTable();
   receiveInfo(baseUrl, gameId);
-
 });
-
