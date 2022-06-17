@@ -60,21 +60,23 @@ const receiveInfo = async (baseUrl, gameId) => {
   });
   const gamerArray = await response.json();
 
+  StoredScores.addScores(user.value, score.value);
+
   return gamerArray;
 };
 
 refreshBtn.addEventListener('click', () => {
+
   receiveInfo(baseUrl, gameId);
 
-  const scoresArray = receiveInfo(baseUrl, gameId);
+  // let scoresArray = JSON.parse(JSON.stringify(gamerArray));
 
-  console.log(scoresArray);
+  // console.log(scoresArray);
 
-  for (let i = 0; i < scoresArray.length; i++) {
-    StoredScores.addScores(scoresArray.user[i], scoresArray.score[i]);
-    
-  }
+  // for (let i = 0; i < scoresArray.length; i++) {
+  //   StoredScores.addScores([i].scoresArray.user, [i].scoresArray.score);
+  // }
 
-  StoredScores.addScores('Nena', 34);
+  // StoredScores.addScores('Nena', 34);
 
 });
