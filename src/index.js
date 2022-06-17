@@ -1,5 +1,12 @@
 import './style.css';
 import StoredScores from './modules/add-scores.js';
+import sendData from './modules/send-data.js';
+import receiveInfo from './modules/receive-info.js';
+
+// Base URL from API
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
+
+const refreshBtn = document.getElementById('refresh-btn');
 
 // Constructor for the object
 class ScoreInfo {
@@ -14,21 +21,31 @@ const mainForm = document.getElementById('add-score');
 const inputName = document.getElementById('name-input');
 const scoreName = document.getElementById('score-input');
 
+// Set up Game and ID
+const gameId = '2vI2sAbMeXnrTQvulubR';
+
+// Main Event Form
 mainForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
   // Get Values
-  const name = inputName.value;
-  const score = scoreName.value;
+  const firstName = inputName.value;
+  const scoreNumber = scoreName.value;
 
-  if (name !== '' && score !== '') {
+  if (firstName !== '' && scoreNumber !== '') {
     // Instate Score
-    const scores = new ScoreInfo(name, score);
+    const scores = new ScoreInfo(firstName, scoreNumber);
 
-    // Add Score to List
-    StoredScores.addScores(scores);
+    // Send Data to API
+    sendData(baseUrl, gameId, scores);
 
     // Clear Inputs
     StoredScores.clearInputs();
   }
+});
+
+// Receive Data Event
+refreshBtn.addEventListener('click', () => {
+  StoredScores.clearTable();
+  receiveInfo(baseUrl, gameId);
 });
