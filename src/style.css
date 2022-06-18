@@ -1,7 +1,21 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+  font-family: 'Montserrat', 'Lucida Sans Regular', sans-serif;
+}
+
+body {
+  background-color: #ccc;
+}
+
+header {
+  background-color: rgb(63, 63, 63);
+  padding: 1rem;
+  color: rgb(228, 228, 228);
+}
+
+header p {
+  margin-top: 0.8rem;
 }
 
 #main-container {
@@ -24,22 +38,26 @@
   appearance: none;
   box-shadow: 5px 5px black;
   transition-duration: 0.1s;
+  border-radius: 4px;
 }
 
 .btn-type:hover {
   transform: translate(5px, 5px);
   box-shadow: none;
+  transition: 0.5s;
 }
 
 .btn-type:active {
   transform: translate(5px, 5px);
   box-shadow: none;
   background-color: rgb(156, 147, 147);
+  transition: 0.5s;
 }
 
 #scores-table {
   border: 2px solid black;
   margin-top: 1rem;
+  border-radius: 4px;
 }
 
 .score-name {
@@ -64,8 +82,17 @@
 
 #add-score input {
   padding: 5px;
+  border-radius: 4px;
 }
 
 .btn-holder {
   align-self: flex-end;
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+  background-image: url('./images/bg-3.jpg');
+  background-size: 100%;
+  box-shadow: inset 0 0 0 1000px #563a3780;
 }
